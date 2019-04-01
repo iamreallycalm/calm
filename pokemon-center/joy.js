@@ -1,9 +1,7 @@
-import jsonfile from 'jsonfile';
+const jsonfile = require('jsonfile');
 
-const pokedex = 'pokemon-center/pokedex.json';
+const pokedex = 'pokedex.json';
 
-const showPokemons = () => jsonfile.read(pokedex).then((pokemons) =>  {
-    pokemons.map(pokemon => console.log(pokemon.name));
+jsonfile.readFile(pokedex).then((pokemons) =>  {
+    pokemons.pokemon.map(pokemon => console.log(pokemon.name));
 });
-
-export default showPokemons;
