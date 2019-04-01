@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/iamreallycalm/calm/issues"
   },
-  "homepage": "https://github.com/iamreallycalm/calm#readme"
+  "homepage": "https://github.com/iamreallycalm/calm#readme",
+  "dependencies": {
+    "jsonfile": "^5.0.0"
+  }
 }
